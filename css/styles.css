@@ -1,19 +1,60 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/play-v21-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/play-v21-cyrillic_latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v51-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/roboto-v51-cyrillic_latin-600.woff2') format('woff2');
+}
+
 :root {
     /* Colors */
-     --beauty-landing-2-background: #fff;
-      --beauty-landing-2-s2: #2b7fff;
-      --beauty-landing-2-c1: #011c44;
-      --beauty-landing-2-c3: #4a4a4a;
-      --beauty-landing-2-s4: #ffd02b;
-      --beauty-landing-2-s5: #747272;
-      --beauty-landing-2-c6: #011f4a;
+    --beauty-landing-2-background: #fff;
+    --beauty-landing-2-s2: #2b7fff;
+    --beauty-landing-2-c1: #011c44;
+    --beauty-landing-2-c3: #4a4a4a;
+    --beauty-landing-2-s4: #ffd02b;
+    --beauty-landing-2-s5: #747272;
+    --beauty-landing-2-c6: #011f4a;
+
+    /* Fonts */
+    --second-family: "Roboto", sans-serif;
+    --font4: "Play", sans-serif;
 }
 
 /* Base */
 body {
     color: var(--beauty-landing-2-c1);
     background-color: var(--beauty-landing-2-background);
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.7;
 }
+
 body .accent {
     color: var(--beauty-landing-2-s2);
 }
@@ -28,15 +69,26 @@ footer {
 /* Link */
 .link {
     color: var(--beauty-landing-2-c1);
+    font-size: 18px;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.17;
 }
 
 .link:hover {
     color: var(--beauty-landing-2-s2);
+    font-weight: 700;
+    font-size: 18px;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.17;
 }
 
 /* Button */
 .button {
     color: var(--beauty-landing-2-background);
+    font-weight: 600;
+    font-size: 18px;
     background: var(--beauty-landing-2-s2);
     border: solid 2px var(--beauty-landing-2-s2);
     border-radius: 32px;
@@ -45,6 +97,7 @@ footer {
 
 .button:hover {
     color: var(--beauty-landing-2-c1);
+    font-weight: 600;
     background-color: transparent;
     border: solid 2px var(--beauty-landing-2-s2);
     border-radius: 32px;
@@ -53,4 +106,81 @@ footer {
 /* Hero title */
 .hero-title {
     color: var(--beauty-landing-2-s2);
+    font-family: var(--font4);
+    font-weight: 700;
+    font-size: 140px;
+    text-transform: capitalize;
+}
+
+.hero-text {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.hero-hint {
+    font-weight: 400;
+    font-size: 12px;
+    /* text-align: center; */
+}
+
+/* Section title */
+.section-title {
+    font-family: var(--font4);
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.section-title .accent-name {
+    color: var(--beauty-landing-2-s2);
+    text-transform: capitalize;
+}
+
+/* About us section */
+.about-us-accent {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* Why choose us section */
+.why-choose-us-text {
+    font-weight: 400;
+    font-size: 18px;
+    /* text-align: center; */
+}
+
+/* Contacts section */
+.contacts-text {
+    color: var(--beauty-landing-2-background);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.contacts-hint {
+    color: var(--beauty-landing-2-s5);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+/* Footer */
+.address-link {
+    color: var(--beauty-landing-2-background);
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.address-link:hover {
+    color: var(--beauty-landing-2-s2);
+    font-weight: 700;
+    font-size: 16px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.address-copyright {
+    color: var(--beauty-landing-2-s5);
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 13px;
 }
