@@ -46,6 +46,10 @@
 }
 
 /* Base */
+* {
+    box-sizing: border-box;
+}
+
 body {
     color: var(--beauty-landing-2-c1);
     background-color: var(--beauty-landing-2-background);
@@ -59,8 +63,23 @@ body .accent {
     color: var(--beauty-landing-2-s2);
 }
 
+h1, h2, p {
+    margin-top: 0;
+}
+
 ul {
     list-style-type: none;
+}
+
+.section {
+    padding: 48px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 footer {
@@ -87,6 +106,7 @@ footer {
 
 /* Button */
 .button {
+    padding: 16px 32px;
     color: var(--beauty-landing-2-background);
     font-weight: 600;
     font-size: 18px;
@@ -104,16 +124,27 @@ footer {
     border-radius: 32px;
 }
 
-/* Hero title */
+/* Hero section */
+.hero-section {
+    padding-bottom: 126px 0;
+}
+
+.hero-section .button {
+    margin-bottom: 14px
+}
+
 .hero-title {
+    margin-bottom: 40px;
     color: var(--beauty-landing-2-s2);
     font-family: var(--font4);
     font-weight: 700;
     font-size: 140px;
+    line-height: 0.8;
     text-transform: capitalize;
 }
 
 .hero-text {
+    margin-bottom: 16px;
     font-weight: 400;
     font-size: 18px;
 }
@@ -126,6 +157,7 @@ footer {
 
 /* Section title */
 .section-title {
+    margin-bottom: 48px;
     font-family: var(--font4);
     font-weight: 700;
     font-size: 64px;
@@ -137,9 +169,21 @@ footer {
 }
 
 /* About us section */
+.about-us-title {
+    margin-bottom: 40px;
+}
+
 .about-us-accent {
     font-weight: 600;
     text-transform: capitalize;
+}
+
+.about-us-text {
+    margin-bottom: 40px;
+}
+
+.about-us-section {
+    margin-bottom: 80px;
 }
 
 /* Why choose us section */
@@ -150,10 +194,18 @@ footer {
 }
 
 /* Contacts section */
+.contacts-section {
+    margin-bottom: 48px;
+}
+
 .contacts-text {
     color: var(--beauty-landing-2-background);
     font-weight: 600;
     font-size: 22px;
+}
+
+.contacts-section .button {
+    margin-bottom: 8px;
 }
 
 .contacts-hint {
