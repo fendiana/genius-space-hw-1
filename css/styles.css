@@ -1,403 +1,405 @@
 @font-face {
-    font-display: swap;
-    font-family: 'Play';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/play-v21-cyrillic_latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v21-cyrillic_latin-regular.woff2') format('woff2');
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Play';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/play-v21-cyrillic_latin-700.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v21-cyrillic_latin-700.woff2') format('woff2');
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/roboto-v51-cyrillic_latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v51-cyrillic_latin-regular.woff2') format('woff2');
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/roboto-v51-cyrillic_latin-600.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/roboto-v51-cyrillic_latin-600.woff2') format('woff2');
 }
 
 :root {
-    /* Colors */
-    --beauty-landing-2-background: #fff;
-    --beauty-landing-2-s2: #2b7fff;
-    --beauty-landing-2-c1: #011c44;
-    --beauty-landing-2-c3: #4a4a4a;
-    --beauty-landing-2-s4: #ffd02b;
-    --beauty-landing-2-s5: #747272;
-    --beauty-landing-2-c6: #011f4a;
+  /* Colors */
+  --beauty-landing-2-background: #fff;
+  --beauty-landing-2-s2: #2b7fff;
+  --beauty-landing-2-c1: #011c44;
+  --beauty-landing-2-c3: #4a4a4a;
+  --beauty-landing-2-s4: #ffd02b;
+  --beauty-landing-2-s5: #747272;
+  --beauty-landing-2-c6: #011f4a;
 
-    /* Fonts */
-    --second-family: "Roboto", sans-serif;
-    --font4: "Play", sans-serif;
+  /* Fonts */
+  --second-family: 'Roboto', sans-serif;
+  --font4: 'Play', sans-serif;
 }
 
 /* Base */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    color: var(--beauty-landing-2-c1);
-    background-color: var(--beauty-landing-2-background);
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 1.7;
+  color: var(--beauty-landing-2-c1);
+  background-color: var(--beauty-landing-2-background);
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.7;
 }
 
 body .accent {
-    color: var(--beauty-landing-2-s2);
+  color: var(--beauty-landing-2-s2);
 }
 
-h1, h2, p {
-    margin-top: 0;
+h1,
+h2,
+p {
+  margin-top: 0;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 img {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .section {
-    padding: 48px 0;
+  padding: 48px 0;
 }
 
 .container {
-    width: 100%;
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 0 24px;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 footer {
-    color: var(--beauty-landing-2-s5)
+  color: var(--beauty-landing-2-s5);
 }
 
 /* Link */
 .link {
-    color: var(--beauty-landing-2-c1);
-    font-size: 18px;
-    font-style: normal;
-    text-decoration: none;
-    line-height: 1.17;
+  color: var(--beauty-landing-2-c1);
+  font-size: 18px;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.17;
 }
 
 .link:hover {
-    color: var(--beauty-landing-2-s2);
-    font-weight: 700;
-    font-size: 18px;
-    font-style: normal;
-    text-decoration: none;
-    line-height: 1.17;
+  color: var(--beauty-landing-2-s2);
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.17;
 }
 
 /* Button */
 .button {
-    padding: 16px 32px;
-    color: var(--beauty-landing-2-background);
-    font-weight: 600;
-    font-size: 18px;
-    background: var(--beauty-landing-2-s2);
-    border: solid 2px var(--beauty-landing-2-s2);
-    border-radius: 32px;
-    cursor: pointer;
+  padding: 16px 32px;
+  color: var(--beauty-landing-2-background);
+  font-weight: 600;
+  font-size: 18px;
+  background: var(--beauty-landing-2-s2);
+  border: solid 2px var(--beauty-landing-2-s2);
+  border-radius: 32px;
+  cursor: pointer;
 }
 
 .button:hover {
-    color: var(--beauty-landing-2-c1);
-    font-weight: 600;
-    background-color: transparent;
-    border: solid 2px var(--beauty-landing-2-s2);
-    border-radius: 32px;
+  color: var(--beauty-landing-2-c1);
+  font-weight: 600;
+  background-color: transparent;
+  border: solid 2px var(--beauty-landing-2-s2);
+  border-radius: 32px;
 }
 
 /* Header section */
 .header-nav {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    gap: 40px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
 }
 
 .header-menu {
-    display: flex;
-    justify-content: center;
-    gap: 56px;
-    flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+  flex-grow: 1;
 }
 
 .header-contacts {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
 }
 
 /* Hero section */
 .hero-section {
-    padding-bottom: 126px 0;
+  padding-bottom: 126px 0;
 }
 
 .hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 529px;
-    margin-left: 106px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 529px;
+  margin-left: 106px;
 }
 
 .hero-section .button {
-    margin-bottom: 14px
+  margin-bottom: 14px;
 }
 
 .hero-title {
-    margin-bottom: 40px;
-    color: var(--beauty-landing-2-s2);
-    font-family: var(--font4);
-    font-weight: 700;
-    font-size: 140px;
-    line-height: 0.8;
-    text-transform: capitalize;
+  margin-bottom: 40px;
+  color: var(--beauty-landing-2-s2);
+  font-family: var(--font4);
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 0.8;
+  text-transform: capitalize;
 }
 
 .hero-text {
-    margin-bottom: 16px;
-    font-weight: 400;
-    font-size: 18px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .hero-hint {
-    font-weight: 400;
-    font-size: 12px;
-    text-align: center;
-    max-width: 238px;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  max-width: 238px;
 }
 
 /* Section title */
 .section-title {
-    margin-bottom: 48px;
-    font-family: var(--font4);
-    font-weight: 700;
-    font-size: 64px;
+  margin-bottom: 48px;
+  font-family: var(--font4);
+  font-weight: 700;
+  font-size: 64px;
 }
 
 .section-title .accent-name {
-    color: var(--beauty-landing-2-s2);
-    text-transform: capitalize;
+  color: var(--beauty-landing-2-s2);
+  text-transform: capitalize;
 }
 
 /* About us section */
 .about-us-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 32px
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
 }
 
 .about-us-content {
-    margin-top: 40px;
-    max-width: 709px;
+  margin-top: 40px;
+  max-width: 709px;
 }
 
 .about-us-procedure-example {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    max-width: 500px;
-    flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 500px;
+  flex-shrink: 0;
 }
 
 .about-us-title {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .about-us-accent {
-    font-weight: 600;
-    text-transform: capitalize;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 .about-us-text {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .about-us-section {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 /* Why choose us section */
 .why-choose-us-section {
-    text-align: center;
+  text-align: center;
 }
 
 .why-choose-us-container {
-    display: flex;
+  display: flex;
 }
 
 .why-choose-us-list {
-    display: flex;
-    justify-content: center;
-    gap: 56px;
+  display: flex;
+  justify-content: center;
+  gap: 56px;
 }
 
 .why-choose-us-item {
-    flex-basis: calc((100% - 112px) / 3);
+  flex-basis: calc((100% - 112px) / 3);
 }
 
 .why-choose-us-card {
-    padding: 24px 32px;
-    border: 1px solid var(--beauty-landing-2-c1); /* to change to 0 */
-    border-radius: 32px;
-    background: var(--beauty-landing-2-background);
+  padding: 24px 32px;
+  border: 1px solid var(--beauty-landing-2-c1); /* to change to 0 */
+  border-radius: 32px;
+  background: var(--beauty-landing-2-background);
 }
 
 .why-choose-us-text {
-    font-weight: 400;
-    font-size: 18px;
-    text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
 }
 
 /* Our procedures section */
 .our-procedures-section {
-    text-align: center;
+  text-align: center;
 }
 
 .our-procedures-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .our-procedures-list {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 .our-procedures-item {
-    flex-basis: calc((100% - 32px) / 3);
+  flex-basis: calc((100% - 32px) / 3);
 }
 
 .our-procedures-card {
-    padding: 372px 77px 32px 115px;
-    border: 1px solid var(--beauty-landing-2-c1); 
-    border-radius: 4px 120px;
+  padding: 372px 77px 32px 115px;
+  border: 1px solid var(--beauty-landing-2-c1);
+  border-radius: 4px 120px;
 }
 
 .our-procedures-text {
-    text-align: center;
+  text-align: center;
 }
 
 /* Contacts section */
 .contacts-container {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
 }
 
 .contacts-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 48px 56px;
-    border: 1px solid var(--beauty-landing-2-c1);
-    border-radius: 32px;
-    max-width: 423px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 56px;
+  border: 1px solid var(--beauty-landing-2-c1);
+  border-radius: 32px;
+  max-width: 423px;
 }
 
 .contacts-section {
-    text-align: center;
-    margin-bottom: 48px;
+  text-align: center;
+  margin-bottom: 48px;
 }
 
 .contacts-text {
-    text-align: center;
-    max-width: 274px;
-    color: var(--beauty-landing-2-background);
-    font-weight: 600;
-    font-size: 22px;
+  text-align: center;
+  max-width: 274px;
+  color: var(--beauty-landing-2-background);
+  font-weight: 600;
+  font-size: 22px;
 }
 
 .contacts-section .button {
-    margin-bottom: 8px;
-    max-width: 295px;
+  margin-bottom: 8px;
+  max-width: 295px;
 }
 
 .contacts-hint {
-    text-align: center;
-    max-width: 216px;
-    color: var(--beauty-landing-2-s5);
-    font-weight: 400;
-    font-size: 12px;
+  text-align: center;
+  max-width: 216px;
+  color: var(--beauty-landing-2-s5);
+  font-weight: 400;
+  font-size: 12px;
 }
 
 /* Footer */
 .footer-container {
-    display: flex;
-    align-items: flex-start;
-    flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-grow: 1;
 }
 
 .footer-nav {
-    display: flex;
-    align-items: flex-start;
-    flex-grow: 1;
-    gap: 186px;
+  display: flex;
+  align-items: flex-start;
+  flex-grow: 1;
+  gap: 186px;
 }
 
 .footer-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    flex-grow: 1;
-    max-width: 203px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
+  max-width: 203px;
 }
 
 .footer-socials {
-    display: flex;
-    gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 
 .footer-copyright {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .address-link {
-    color: var(--beauty-landing-2-background);
-    font-weight: 400;
-    font-size: 16px;
-    font-style: normal;
-    text-decoration: none;
+  color: var(--beauty-landing-2-background);
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  text-decoration: none;
 }
 
 .address-link:hover {
-    color: var(--beauty-landing-2-s2);
-    font-weight: 700;
-    font-size: 16px;
-    font-style: normal;
-    text-decoration: none;
+  color: var(--beauty-landing-2-s2);
+  font-weight: 700;
+  font-size: 16px;
+  font-style: normal;
+  text-decoration: none;
 }
 
 .address-copyright {
-    color: var(--beauty-landing-2-s5);
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 13px;
+  color: var(--beauty-landing-2-s5);
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 13px;
 }
