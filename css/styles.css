@@ -68,7 +68,14 @@ h1, h2, p {
 }
 
 ul {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
 }
 
 .section {
@@ -124,9 +131,38 @@ footer {
     border-radius: 32px;
 }
 
+/* Header section */
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    flex-grow: 1;
+}
+
+.header-contacts {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
 /* Hero section */
 .hero-section {
     padding-bottom: 126px 0;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 529px;
+    margin-left: 106px;
 }
 
 .hero-section .button {
@@ -152,7 +188,8 @@ footer {
 .hero-hint {
     font-weight: 400;
     font-size: 12px;
-    /* text-align: center; */
+    text-align: center;
+    max-width: 238px;
 }
 
 /* Section title */
@@ -169,6 +206,25 @@ footer {
 }
 
 /* About us section */
+.about-us-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px
+}
+
+.about-us-content {
+    margin-top: 40px;
+    max-width: 709px;
+}
+
+.about-us-procedure-example {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 500px;
+    flex-shrink: 0;
+}
+
 .about-us-title {
     margin-bottom: 40px;
 }
@@ -187,18 +243,91 @@ footer {
 }
 
 /* Why choose us section */
+.why-choose-us-section {
+    text-align: center;
+}
+
+.why-choose-us-container {
+    display: flex;
+}
+
+.why-choose-us-list {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+}
+
+.why-choose-us-item {
+    flex-basis: calc((100% - 112px) / 3);
+}
+
+.why-choose-us-card {
+    padding: 24px 32px;
+    border: 1px solid var(--beauty-landing-2-c1); /* to change to 0 */
+    border-radius: 32px;
+    background: var(--beauty-landing-2-background);
+}
+
 .why-choose-us-text {
     font-weight: 400;
     font-size: 18px;
-    /* text-align: center; */
+    text-align: center;
+}
+
+/* Our procedures section */
+.our-procedures-section {
+    text-align: center;
+}
+
+.our-procedures-container {
+    display: flex;
+    justify-content: center;
+}
+
+.our-procedures-list {
+    display: flex;
+    gap: 16px;
+}
+
+.our-procedures-item {
+    flex-basis: calc((100% - 32px) / 3);
+}
+
+.our-procedures-card {
+    padding: 372px 77px 32px 115px;
+    border: 1px solid var(--beauty-landing-2-c1); 
+    border-radius: 4px 120px;
+}
+
+.our-procedures-text {
+    text-align: center;
 }
 
 /* Contacts section */
+.contacts-container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.contacts-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 56px;
+    border: 1px solid var(--beauty-landing-2-c1);
+    border-radius: 32px;
+    max-width: 423px;
+}
+
 .contacts-section {
+    text-align: center;
     margin-bottom: 48px;
 }
 
 .contacts-text {
+    text-align: center;
+    max-width: 274px;
     color: var(--beauty-landing-2-background);
     font-weight: 600;
     font-size: 22px;
@@ -206,15 +335,50 @@ footer {
 
 .contacts-section .button {
     margin-bottom: 8px;
+    max-width: 295px;
 }
 
 .contacts-hint {
+    text-align: center;
+    max-width: 216px;
     color: var(--beauty-landing-2-s5);
     font-weight: 400;
     font-size: 12px;
 }
 
 /* Footer */
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+    gap: 186px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+    max-width: 203px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .address-link {
     color: var(--beauty-landing-2-background);
     font-weight: 400;
