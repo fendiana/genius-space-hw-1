@@ -91,10 +91,6 @@ img {
   padding: 0 24px;
 }
 
-footer {
-  color: var(--beauty-landing-2-s5);
-}
-
 /* Link */
 .link {
   color: var(--beauty-landing-2-c1);
@@ -161,10 +157,21 @@ footer {
 
 .hero-container {
   display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-content {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   max-width: 529px;
   margin-left: 106px;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hero-section .button {
@@ -265,9 +272,10 @@ footer {
 
 .why-choose-us-card {
   padding: 24px 32px;
-  border: 1px solid var(--beauty-landing-2-c1); /* to change to 0 */
+  border: 0; /* to change to 0 */
   border-radius: 32px;
   background: var(--beauty-landing-2-background);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .why-choose-us-text {
@@ -297,12 +305,23 @@ footer {
 
 .our-procedures-card {
   padding: 372px 77px 32px 115px;
-  border: 1px solid var(--beauty-landing-2-c1);
+  border: 0;
   border-radius: 4px 120px;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 47.4%,
+    rgba(1, 28, 68, 0.73) 82.66%,
+    #011c44 99.06%
+  );
 }
 
 .our-procedures-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1, 18;
   text-align: center;
+  color: var(--beauty-landing-2-background);
 }
 
 /* Contacts section */
@@ -349,6 +368,11 @@ footer {
 }
 
 /* Footer */
+footer {
+  color: var(--beauty-landing-2-s5);
+  background-color: var(--beauty-landing-2-c1);
+}
+
 .footer-container {
   display: flex;
   align-items: flex-start;
