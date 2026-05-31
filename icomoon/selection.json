@@ -4,6 +4,32 @@
     {
       "icon": {
         "paths": [
+          "M19.982 550.988c-26.66-26.659-26.66-69.884-0-96.543l434.447-434.447c26.659-26.66 69.884-26.66 96.543 0s26.659 69.884 0 96.544l-386.174 386.175 386.174 386.176c26.66 26.658 26.66 69.885 0 96.543s-69.884 26.658-96.543 0l-434.447-434.448zM1212.532 570.983l-1144.278 0.001v-136.533l1144.278-0.001v136.533z"
+        ],
+        "attrs": [],
+        "width": 1229,
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "arrow"
+        ],
+        "colorPermutations": {}
+      },
+      "attrs": [],
+      "properties": {
+        "order": 11,
+        "id": 3,
+        "name": "arrow",
+        "prevSize": 32
+      },
+      "setIdx": 1,
+      "setId": 4,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
           "M290.505 0.009l278.294 341.143 437.336-50.629-341.144 278.294 50.628 437.333-278.292-341.14-437.336 50.631 341.143-278.295-50.629-437.336z"
         ],
         "attrs": [],
@@ -17,12 +43,12 @@
       },
       "attrs": [],
       "properties": {
-        "order": 14,
+        "order": 10,
         "id": 8,
         "name": "star-three",
         "prevSize": 32
       },
-      "setIdx": 0,
+      "setIdx": 2,
       "setId": 3,
       "iconIdx": 0
     },
@@ -42,12 +68,12 @@
       },
       "attrs": [],
       "properties": {
-        "order": 15,
+        "order": 9,
         "id": 7,
         "name": "star-two",
         "prevSize": 32
       },
-      "setIdx": 0,
+      "setIdx": 2,
       "setId": 3,
       "iconIdx": 1
     },
@@ -67,12 +93,12 @@
       },
       "attrs": [],
       "properties": {
-        "order": 16,
+        "order": 8,
         "id": 6,
         "name": "star-one",
         "prevSize": 32
       },
-      "setIdx": 0,
+      "setIdx": 2,
       "setId": 3,
       "iconIdx": 2
     },
@@ -92,12 +118,12 @@
       },
       "attrs": [],
       "properties": {
-        "order": 17,
+        "order": 7,
         "id": 5,
         "name": "instagram",
         "prevSize": 32
       },
-      "setIdx": 0,
+      "setIdx": 2,
       "setId": 3,
       "iconIdx": 3
     },
@@ -117,12 +143,12 @@
       },
       "attrs": [],
       "properties": {
-        "order": 18,
+        "order": 6,
         "id": 4,
         "name": "facebook",
         "prevSize": 32
       },
-      "setIdx": 0,
+      "setIdx": 2,
       "setId": 3,
       "iconIdx": 4
     },
@@ -142,12 +168,12 @@
       },
       "attrs": [],
       "properties": {
-        "order": 19,
+        "order": 5,
         "id": 3,
         "name": "telephone-receiver",
         "prevSize": 32
       },
-      "setIdx": 0,
+      "setIdx": 2,
       "setId": 3,
       "iconIdx": 5
     },
@@ -167,12 +193,12 @@
       },
       "attrs": [],
       "properties": {
-        "order": 20,
+        "order": 4,
         "id": 2,
         "name": "crown",
         "prevSize": 32
       },
-      "setIdx": 0,
+      "setIdx": 2,
       "setId": 3,
       "iconIdx": 6
     },
@@ -200,12 +226,12 @@
       },
       "attrs": [],
       "properties": {
-        "order": 21,
+        "order": 3,
         "id": 1,
         "name": "cosmetics-bottles",
         "prevSize": 32
       },
-      "setIdx": 0,
+      "setIdx": 2,
       "setId": 3,
       "iconIdx": 7
     },
@@ -225,12 +251,12 @@
       },
       "attrs": [],
       "properties": {
-        "order": 22,
+        "order": 2,
         "id": 0,
         "name": "atom",
         "prevSize": 32
       },
-      "setIdx": 0,
+      "setIdx": 2,
       "setId": 3,
       "iconIdx": 8
     }

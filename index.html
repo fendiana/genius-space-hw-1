@@ -7,44 +7,50 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav class="header-nav">
-          <a href="index.html">
-            <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
-          </a>
-          <ul class="header-menu">
-            <li><a class="link" href="#about-us-section">Про нас</a></li>
-            <li><a class="link" href="#why-choose-us-section">Чому ми</a></li>
-            <li>
-              <a class="link" href="#our-procedures-section">Наші процедури</a>
-            </li>
-            <li><a class="link" href="#contacts-section">Контакти</a></li>
-          </ul>
-          <ul class="header-contacts">
-            <li>
-              <a href="#">
-                <svg class="header-socials" width="32" height="32">
-                  <use href="./images/icons.svg#icon-telephone-receiver"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="header-socials" width="32" height="32">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="header-socials" width="32" height="32">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="index.html">
+              <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
+            </a>
+            <ul class="header-menu">
+              <li><a class="link" href="#about-us-section">Про нас</a></li>
+              <li><a class="link" href="#why-choose-us-section">Чому ми</a></li>
+              <li>
+                <a class="link" href="#our-procedures-section"
+                  >Наші процедури</a
+                >
+              </li>
+              <li><a class="link" href="#contacts-section">Контакти</a></li>
+            </ul>
+            <ul class="header-contacts">
+              <li>
+                <a href="#">
+                  <svg class="header-socials" width="32" height="32">
+                    <use
+                      href="./images/icons.svg#icon-telephone-receiver"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="header-socials" width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="header-socials" width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -59,12 +65,6 @@
                 Запишись та отримай безкоштовну консультацію нашого косметолога
               </p>
             </div>
-            <!-- <div class="hero-image">
-              <img
-                src="./images/hero-section-bg.jpg"
-                alt="Спеціаліст в масці робить процедуру клієнту"
-              />
-            </div> -->
           </div>
         </div>
       </section>
@@ -88,11 +88,14 @@
               </p>
             </div>
             <div class="about-us-procedure-example">
-              <img
-                src="./images/before-procedure.jpg"
-                alt="Обличчя жінки до процедури, з видимими проблемами шкіри"
-              />
-              <div class="about-us-icons">
+              <div class="before-procedure">
+                <img
+                  class="before-example"
+                  src="./images/before-procedure.jpg"
+                  alt="Обличчя жінки до процедури, з видимими проблемами шкіри"
+                />
+              </div>
+              <!-- <div class="about-us-icons">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-star-one"></use>
                 </svg>
@@ -102,11 +105,14 @@
                 <svg width="16" height="16">
                   <use href="./images/icons.svg#icon-star-three"></use>
                 </svg>
+              </div> -->
+              <div class="after-procedure">
+                <img
+                  class="after-example"
+                  src="./images/after-procedure.jpg"
+                  alt="Обличчя жінки після процедури, з гладкою, сяючою та піддягнутою шкірою"
+                />
               </div>
-              <img
-                src="./images/after-procedure.jpg"
-                alt="Обличчя жінки після процедури, з гладкою, сяючою та піддягнутою шкірою"
-              />
             </div>
           </div>
         </div>
@@ -118,8 +124,8 @@
           </h2>
           <div class="why-choose-us-container">
             <ul class="why-choose-us-list">
-              <li>
-                <article class="why-choose-us-item">
+              <li class="why-choose-us-item">
+                <article>
                   <div class="why-choose-us-card">
                     <svg width="48" height="48">
                       <use href="./images/icons.svg#icon-atom"></use>
@@ -131,8 +137,8 @@
                   </div>
                 </article>
               </li>
-              <li>
-                <article class="why-choose-us-item">
+              <li class="why-choose-us-item">
+                <article>
                   <div class="why-choose-us-card">
                     <svg width="48" height="48">
                       <use
@@ -146,8 +152,8 @@
                   </div>
                 </article>
               </li>
-              <li>
-                <article class="why-choose-us-item">
+              <li class="why-choose-us-item">
+                <article>
                   <div class="why-choose-us-card">
                     <svg width="48" height="48">
                       <use href="./images/icons.svg#icon-crown"></use>
@@ -169,6 +175,11 @@
             Наші <span class="accent">процедури</span>
           </h2>
           <div class="our-procedures-container">
+            <button class="carousel-button" type="button">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
             <ul class="our-procedures-list">
               <li class="our-procedures-item">
                 <article class="our-procedures-card">
@@ -198,6 +209,11 @@
                 </article>
               </li>
             </ul>
+            <button class="carousel-button" type="button">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -208,6 +224,7 @@
           </h2>
           <div class="contacts-container">
             <iframe
+              class="contacts-map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10891.630890805405!2d30.49969651672831!3d50.44222930984392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e1!3m2!1suk!2scz!4v1777811122116!5m2!1suk!2scz"
               width="605"
               height="481"
