@@ -60,10 +60,10 @@ body {
   font-size: 22px;
   line-height: 1.7;
   margin: 0;
-  background-image: url(../images/why-choose-us-bg.png);
+  /* background-image: url(../images/why-choose-us-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center 1400px;
+  background-position: center 1400px; */
 }
 
 body .accent {
@@ -97,7 +97,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1288px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -142,7 +142,11 @@ img {
 
 /* Header section */
 .header {
-  backdrop-filter: blur(10px);
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(5px);
   background: rgba(255, 255, 255, 0.25);
 }
 
@@ -180,6 +184,8 @@ img {
 
 /* Hero section */
 .hero-section {
+  position: relative;
+  padding-top: 120px;
   padding-bottom: 126px;
   background-image:
     linear-gradient(
@@ -193,6 +199,10 @@ img {
   background-repeat: no-repeat;
   background-position: right top;
   background-size: contain;
+  mask-image: url('../images/hero-wave.png');
+  mask-repeat: no-repeat;
+  mask-position: center bottom;
+  mask-size: cover;
 }
 
 .hero-container {
@@ -257,7 +267,12 @@ img {
 }
 
 /* About us section */
+.about-us-section {
+  margin-bottom: 80px;
+}
+
 .about-us-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   gap: 32px;
@@ -265,7 +280,31 @@ img {
 
 .about-us-content {
   margin-top: 40px;
-  max-width: 709px;
+  max-width: 708px;
+}
+
+.star-one,
+.star-two,
+.star-three {
+  position: absolute;
+}
+
+.star-one {
+  top: 336px;
+  right: 294px;
+  fill: var(--beauty-landing-2-c6);
+}
+
+.star-two {
+  top: 32px;
+  right: -26px;
+  fill: var(--beauty-landing-2-s2);
+}
+
+.star-three {
+  top: 268px;
+  right: 6px;
+  fill: var(--beauty-landing-2-c3);
 }
 
 .about-us-procedure-example {
@@ -287,9 +326,9 @@ img {
   border-radius: 50%;
 }
 
-.about-us-icons {
+/* .about-us-icons {
   display: flex;
-}
+} */
 
 .about-us-title {
   margin-bottom: 40px;
@@ -305,12 +344,26 @@ img {
   margin-bottom: 40px;
 }
 
-.about-us-section {
-  margin-bottom: 80px;
-}
-
 /* Why choose us section */
 .why-choose-us-section {
+  position: relative;
+}
+
+.why-choose-us-section::after {
+  position: absolute;
+  height: 1506px;
+  top: -180px;
+  left: 0;
+  right: 0;
+  background-image: url(../images/why-choose-us-bg.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  content: '';
+  z-index: -1;
+}
+
+.why-choose-us-title {
   text-align: center;
 }
 
@@ -336,6 +389,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 181px;
   gap: 8px;
   padding: 24px 32px;
   border: 0;
@@ -349,6 +403,8 @@ img {
   font-weight: 400;
   font-size: 18px;
   text-align: center;
+  line-height: 1.33;
+  margin: 0;
 }
 
 /* Our procedures section */
@@ -467,13 +523,25 @@ img {
 
 /* Footer */
 footer {
-  padding: 56px;
-  color: var(--beauty-landing-2-s5);
-  background-image: url(../images/footer-bg.png);
+  padding: 56px 0;
+  position: relative;
+  /* color: var(--beauty-landing-2-s5); */
+  background-image: url('../images/footer-bg.png');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   background-color: var(--beauty-landing-2-c1);
+}
+
+footer::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 250px;
+  height: 150px;
+  background-image: url('../images/footer-bottles.png');
+  background-repeat: no-repeat;
+  content: '';
 }
 
 .footer-container {
@@ -498,8 +566,7 @@ footer {
   gap: 24px;
 }
 
-.address-list,
-.address-info {
+.address-list {
   flex-grow: 1;
 }
 
