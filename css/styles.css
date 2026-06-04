@@ -86,6 +86,10 @@ ul {
   list-style-type: none;
 }
 
+li {
+  line-height: 1.1;
+}
+
 img {
   display: block;
   margin: 0 auto;
@@ -109,15 +113,14 @@ img {
   font-style: normal;
   text-decoration: none;
   line-height: 1.17;
+  transition:
+    color 0.3s,
+    font-weight 0.3s;
 }
 
 .link:hover {
   color: var(--beauty-landing-2-s2);
-  font-weight: 700;
-  font-size: 18px;
-  font-style: normal;
-  text-decoration: none;
-  line-height: 1.17;
+  /* font-weight: 700; */
 }
 
 /* Button */
@@ -130,6 +133,11 @@ img {
   border: solid 2px var(--beauty-landing-2-s2);
   border-radius: 32px;
   cursor: pointer;
+  transition:
+    color 0.3s,
+    background-color 0.3s,
+    border-color 0.3s,
+    font-weight 0.3s;
 }
 
 .button:hover {
@@ -176,6 +184,7 @@ img {
 
 .header-socials {
   fill: var(--beauty-landing-2-c1);
+  transition: fill 0.3s;
 }
 
 .header-socials:hover {
@@ -326,10 +335,6 @@ img {
   border-radius: 50%;
 }
 
-/* .about-us-icons {
-  display: flex;
-} */
-
 .about-us-title {
   margin-bottom: 40px;
   max-width: 528px;
@@ -462,12 +467,20 @@ img {
   fill: var(--beauty-landing-2-c1);
   border: 1px solid var(--beauty-landing-2-c1);
   cursor: pointer;
+  transition:
+    background-color 0.3s,
+    fill 0.3s,
+    border 0.3s;
 }
 
 .carousel-button:hover {
   background-color: var(--beauty-landing-2-s2);
   fill: var(--beauty-landing-2-background);
   border: 1px solid var(--beauty-landing-2-background);
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
 }
 
 /* Contacts section */
@@ -561,17 +574,27 @@ footer::after {
   flex-grow: 1;
 }
 
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .footer-socials {
   display: flex;
   gap: 24px;
 }
 
 .address-list {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
+  gap: 16px;
 }
 
 .footer-socials-icon {
   fill: var(--beauty-landing-2-background);
+  transition: fill 0.3s;
 }
 
 .footer-socials-icon:hover {
@@ -583,15 +606,20 @@ footer::after {
   font-weight: 400;
   font-size: 16px;
   font-style: normal;
+  line-height: 1.1;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .address-link:hover {
   color: var(--beauty-landing-2-s2);
-  font-weight: 700;
-  font-size: 16px;
-  font-style: normal;
-  text-decoration: none;
+  /* font-weight: 700; */
+}
+
+.address-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .address-copyright {
@@ -600,4 +628,37 @@ footer::after {
   font-weight: 400;
   font-size: 13px;
   font-style: normal;
+}
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  height: 100%;
+  max-height: 680px;
+  background: var(--beauty-landing-2-c1);
+  border-radius: 48px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
