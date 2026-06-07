@@ -60,7 +60,9 @@
             <div class="hero-content">
               <p class="hero-text">Косметологічна клініка</p>
               <h1 lang="en"><span class="hero-title">Beauty Zone</span></h1>
-              <button class="button" type="submit">Замовити дзвінок</button>
+              <button class="button modal-btn-open" type="submit">
+                Замовити дзвінок
+              </button>
               <p class="hero-hint">
                 Запишись та отримай безкоштовну консультацію нашого косметолога
               </p>
@@ -237,12 +239,7 @@
                 Запишіться <span class="accent">безкоштовно</span> та отримайте
                 подарунок
               </p>
-              <form
-                class="form"
-                name="contacts-form"
-                autocomplete="off"
-                novalidate
-              >
+              <form class="form" name="contacts-form" autocomplete="off">
                 <div class="contacts-form-field">
                   <label class="form-label visually-hidden" for="user-name"
                     >Ваше ім'я та прізвище</label
@@ -253,6 +250,8 @@
                     name="user-name"
                     id="user-name"
                     placeholder="Ваше ім'я та прізвище"
+                    pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+                    required
                   />
                 </div>
 
@@ -266,6 +265,8 @@
                     name="user-tel"
                     id="user-tel"
                     placeholder="Ваш номер телефону"
+                    pattern="^\+[0-9]{12}"
+                    required
                   />
                 </div>
 
@@ -279,6 +280,8 @@
                     name="user-email"
                     id="user-email"
                     placeholder="Ваша електронна пошта"
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    required
                   />
                 </div>
 
@@ -378,7 +381,7 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop-is-hidden">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
         <h2 class="modal-title">Замовити дзвінок</h2>
@@ -386,7 +389,7 @@
           Запишіться <span class="accent">безкоштовно</span> та отримайте
           подарунок
         </p>
-        <form class="form" name="modal-form" autocomplete="off" novalidate>
+        <form class="form" name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"
               >Ваше ім'я та прізвище</label
@@ -397,6 +400,8 @@
               name="user-name"
               id="user-name"
               placeholder="Ваше ім'я та прізвище"
+              pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+              required
             />
           </div>
 
@@ -410,6 +415,8 @@
               name="user-tel"
               id="user-tel"
               placeholder="Ваш номер телефону"
+              pattern="^\+[0-9]{12}"
+              required
             />
           </div>
 
@@ -423,6 +430,8 @@
               name="user-email"
               id="user-email"
               placeholder="Ваша електронна пошта"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              required
             />
           </div>
 
@@ -435,6 +444,8 @@
           </p>
         </form>
       </div>
-    </div> -->
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
