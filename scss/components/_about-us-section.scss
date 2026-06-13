@@ -1,0 +1,89 @@
+.about-us-section {
+    margin-bottom: 80px;
+}
+
+.about-us-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.about-us-content {
+    margin-top: 40px;
+    max-width: 708px;
+}
+
+.star-one,
+.star-two,
+.star-three {
+    position: absolute;
+}
+
+.star-one,
+.star-two,
+.star-three {
+    animation: spin linear;
+    animation-timeline: scroll();
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.star-one {
+    top: 340px;
+    right: 294px;
+    fill: var(--beauty-landing-2-c6);
+}
+
+.star-two {
+    top: 32px;
+    right: -26px;
+    fill: var(--beauty-landing-2-s2);
+}
+
+.star-three {
+    top: 268px;
+    right: 6px;
+    fill: var(--beauty-landing-2-c3);
+}
+
+.about-us-procedure-example {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    flex-basis: 500px;
+    flex-shrink: 0;
+}
+
+.after-procedure {
+    order: 1;
+    align-self: flex-end;
+}
+
+.before-example,
+.after-example {
+    border-radius: 50%;
+}
+
+.about-us-title {
+    margin-bottom: 40px;
+    max-width: 528px;
+}
+
+.about-us-accent {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.about-us-text {
+    margin-bottom: 40px;
+}

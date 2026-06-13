@@ -1,0 +1,43 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import './base';
+@import './utils/utils';
+
+@import './components/about-us-section';
+@import './components/buttons';
+@import './components/carousel';
+@import './components/contacts-section';
+@import './components/footer';
+@import './components/form';
+@import './components/header';
+@import './components/hero-section';
+@import './components/links';
+@import './components/modal';
+@import './components/our-procedures-section';
+@import './components/why-choose-us-section';
+
+
+.section {
+    padding: 48px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Section title */
+.section-title {
+    margin-bottom: 48px;
+    font-family: var(--font4);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.2;
+}
+
+.section-title .accent-name {
+    color: var(--beauty-landing-2-s2);
+    text-transform: capitalize;
+}

@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--beauty-landing-2-c1);
+    background-color: var(--beauty-landing-2-background);
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.7;
+    margin: 0;
+    /* background-image: url(../images/why-choose-us-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 1400px; */
+}
+
+body .accent {
+    color: var(--beauty-landing-2-s2);
+}
+
+h1,
+h2,
+p {
+    margin-top: 0;
+}
+
+a {
+    display: inline-block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    line-height: 1.1;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}

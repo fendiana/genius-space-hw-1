@@ -1,0 +1,47 @@
+.our-procedures-section {
+    text-align: center;
+}
+
+.our-procedures-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.our-procedures-list {
+    display: flex;
+    gap: 16px;
+}
+
+.our-procedures-item {
+    flex-basis: calc((100% - 32px) / 3);
+}
+
+.our-procedures-card {
+    position: relative;
+    padding: 372px 77px 32px 115px;
+    border: 0;
+    border-radius: 4px 120px;
+    background: linear-gradient(180deg,
+            rgba(1, 28, 68, 0) 47.4%,
+            rgba(1, 28, 68, 0.73) 82.66%,
+            #011c44 99.06%);
+}
+
+.our-procedures-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.our-procedures-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1, 18;
+    text-align: center;
+    color: var(--beauty-landing-2-background);
+}

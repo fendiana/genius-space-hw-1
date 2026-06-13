@@ -1,0 +1,40 @@
+.contacts-section {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.contacts-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 32px;
+}
+
+.contacts-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 56px;
+    background-image: url(../images/contacts-bg.png);
+    background-color: var(--beauty-landing-2-c1);
+    border: none;
+    border-radius: 32px;
+    max-width: 424px;
+    width: 100%;
+}
+
+.contacts-map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 32px;
+}
+
+.contacts-form-field {
+    margin-bottom: 16px;
+}
+
+.contacts-form-button {
+    margin-bottom: 8px;
+    max-width: 295px;
+}
