@@ -1,15 +1,14 @@
-footer {
-    padding: 56px 0;
-    position: relative;
-    /* color: var(--beauty-landing-2-s5); */
-    background-image: url('../images/footer-bg.png');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    background-color: var(--beauty-landing-2-c1);
-}
+.footer {
+  padding: 56px 0;
+  position: relative;
+  /* color: var(--beauty-landing-2-s5); */
+  background-image: url('../images/footer-bg.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-color: var(--beauty-landing-2-c1);
 
-footer::after {
+  &::after {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -18,53 +17,39 @@ footer::after {
     background-image: url('../images/footer-bottles.png');
     background-repeat: no-repeat;
     content: '';
-}
+  }
 
-.footer-container {
+  &__container {
     display: flex;
     gap: 20px;
-}
+  }
 
-.footer-nav,
-.footer-address {
+  &__nav,
+  &__address {
     display: flex;
     flex-basis: 50%;
     gap: 20px;
-}
+  }
 
-.footer-logo,
-.footer-menu {
+  &__logo,
+  &__menu {
     flex-grow: 1;
-}
+  }
 
-.footer-menu {
+  &__menu {
     display: flex;
     flex-direction: column;
     gap: 16px;
-}
+  }
 
-.footer-socials {
-    display: flex;
-    gap: 24px;
-}
-
-.address-list {
+  &__address-list {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     gap: 16px;
-}
+  }
 
-.footer-socials-icon {
-    fill: var(--beauty-landing-2-background);
-    transition: fill 0.2s;
-}
-
-.footer-socials-icon:hover {
-    fill: var(--beauty-landing-2-s2);
-}
-
-.address-link {
+  &__address-link {
     color: var(--beauty-landing-2-background);
     font-weight: 400;
     font-size: 16px;
@@ -72,23 +57,38 @@ footer::after {
     line-height: 1.1;
     text-decoration: none;
     transition: color 0.2s;
-}
 
-.address-link:hover {
-    color: var(--beauty-landing-2-s2);
-    /* font-weight: 700; */
-}
+    &:hover {
+      color: var(--beauty-landing-2-s2);
+      /* font-weight: 700; */
+    }
+  }
 
-.address-info {
+  &__socials {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__socials-icon {
+    fill: var(--beauty-landing-2-background);
+    transition: fill 0.2s;
+
+    &:hover {
+      fill: var(--beauty-landing-2-s2);
+    }
+  }
+
+  &__address-info {
     display: flex;
     flex-direction: column;
     gap: 16px;
-}
+  }
 
-.address-copyright {
+  &__address-copyright {
     color: var(--beauty-landing-2-s5);
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 13px;
     font-style: normal;
+  }
 }
