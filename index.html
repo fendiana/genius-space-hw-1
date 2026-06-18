@@ -50,6 +50,62 @@
               </li>
             </ul>
           </nav>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-burger-close"></use>
+              </svg>
+            </button>
+            <div class="mobile-menu__content">
+              <a href="index.html">
+                <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
+              </a>
+              <div class="mobile-menu__nav">
+                <ul class="mobile-menu__menu">
+                  <li><a class="link" href="#about-us-section">Про нас</a></li>
+                  <li>
+                    <a class="link" href="#why-choose-us-section">Чому ми</a>
+                  </li>
+                  <li>
+                    <a class="link" href="#our-procedures-section">
+                      Наші процедури
+                    </a>
+                  </li>
+                  <li><a class="link" href="#contacts-section">Контакти</a></li>
+                </ul>
+                <ul class="mobile-menu__contacts">
+                  <li>
+                    <a href="#">
+                      <svg class="mobile-menu__socials" width="32" height="32">
+                        <use
+                          href="./images/icons.svg#icon-telephone-receiver"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg class="mobile-menu__socials" width="32" height="32">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg class="mobile-menu__socials" width="32" height="32">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -82,7 +138,7 @@
               <h2 class="about-us-section__title section__title">
                 Перевтілюйтесь в <span class="text-brand">Beauty Zone!</span>
               </h2>
-              <p class="about-us-text">
+              <p class="about-us-section__text">
                 Наша косметологічна клініка пропонує вам професійні послуги з
                 догляду за шкірою обличчя та тіла.
               </p>
@@ -124,7 +180,7 @@
           </div>
         </div>
       </section>
-      <section class="why-choose-us-section section" id="why-choose-us-section">
+      <!-- <section class="why-choose-us-section section" id="why-choose-us-section">
         <div class="container">
           <h2 class="why-choose-us-section__title section__title">
             Чому люди <span class="text-brand"> <br />обирають нас</span>
@@ -175,8 +231,8 @@
             </ul>
           </div>
         </div>
-      </section>
-      <section
+      </section> -->
+      <!-- <section
         class="our-procedures-section section"
         id="our-procedures-section"
       >
@@ -229,8 +285,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="contacts-section section" id="contacts-section">
+      </section> -->
+      <!-- <section class="contacts-section section" id="contacts-section">
         <div class="container">
           <h2 class="contacts-section section__title">
             Як нас <span class="text-brand">знайти</span>
@@ -313,7 +369,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
     <footer class="footer">
       <div class="container">
@@ -348,49 +404,49 @@
             </ul>
           </nav>
           <address class="footer__address">
-            <ul class="footer__address-list">
-              <li>
-                <a class="footer__address-link" href="tel:+380960000007"
-                  >+ 38 (096) 000 00 07</a
-                >
-              </li>
-              <li>
-                <a
-                  class="footer__address-link"
-                  href="mailto:beautyzone@gmail.com"
-                  >beautyzone@gmail.com</a
-                >
-              </li>
-              <li>
-                <a
-                  class="footer__address-link"
-                  href="https://maps.app.goo.gl/36BGEnUVPdryGaBT8"
-                  target="_blank"
-                  >Україна, м. Київ, <br />вул. Тараса Шевченка 5</a
-                >
-              </li>
-              <li>
-                <div class="footer__socials">
-                  <a href="#">
-                    <svg class="footer__socials-icon" width="32" height="32">
-                      <use
-                        href="./images/icons.svg#icon-telephone-receiver"
-                      ></use>
-                    </svg>
-                  </a>
-                  <a href="#">
-                    <svg class="footer__socials-icon" width="32" height="32">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                  <a href="#">
-                    <svg class="footer__socials-icon" width="32" height="32">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </div>
-              </li>
-            </ul>
+            <div class="footer__address-contacts">
+              <ul class="footer__address-list">
+                <li>
+                  <a class="footer__address-link" href="tel:+380960000007"
+                    >+ 38 (096) 000 00 07</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__address-link"
+                    href="mailto:beautyzone@gmail.com"
+                    >beautyzone@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__address-link"
+                    href="https://maps.app.goo.gl/36BGEnUVPdryGaBT8"
+                    target="_blank"
+                    >Україна, м. Київ, <br />вул. Тараса Шевченка 5</a
+                  >
+                </li>
+              </ul>
+              <div class="footer__socials">
+                <a href="#">
+                  <svg class="footer__socials-icon" width="32" height="32">
+                    <use
+                      href="./images/icons.svg#icon-telephone-receiver"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="footer__socials-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="footer__socials-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
             <div class="footer__address-info">
               <a class="footer__address-link" href="#" target="_blank"
                 >Політика конфіденційності</a
@@ -472,5 +528,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

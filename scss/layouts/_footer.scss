@@ -21,20 +21,45 @@
 
   &__container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
 
   &__nav,
   &__address {
     display: flex;
-    flex-basis: 50%;
+    flex-direction: column;
     gap: 20px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      flex-basis: 50%;
+      text-align: left;
+    }
   }
 
   &__logo,
   &__menu {
     flex-grow: 1;
   }
+
+  // &__logo {
+  //   width: 56px;
+  //   height: 30px;
+  //   margin-bottom: 42px;
+
+  //   @media screen and (min-width: $bp-desktop) {
+  //     width: 83px;
+  //     height: 42px;
+  //   }
+  // }
 
   &__menu {
     display: flex;
@@ -43,10 +68,13 @@
   }
 
   &__address-list {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 16px;
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      gap: 16px;
+    }
   }
 
   &__address-link {
@@ -66,7 +94,12 @@
 
   &__socials {
     display: flex;
+    justify-content: center;
     gap: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      justify-content: flex-start;
+    }
   }
 
   &__socials-icon {
@@ -76,6 +109,17 @@
     &:hover {
       fill: var(--beauty-landing-2-s2);
     }
+  }
+
+  &__address-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__address-contacts,
+  &__address-info {
+    flex-grow: 1;
   }
 
   &__address-info {
@@ -90,5 +134,6 @@
     font-weight: 400;
     font-size: 13px;
     font-style: normal;
+    margin-bottom: 0;
   }
 }

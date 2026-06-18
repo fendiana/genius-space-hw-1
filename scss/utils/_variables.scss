@@ -1,14 +1,18 @@
 :root {
-    /* Colors */
-    --beauty-landing-2-background: #fff;
-    --beauty-landing-2-s2: #2b7fff;
-    --beauty-landing-2-c1: #011c44;
-    --beauty-landing-2-c3: #4a4a4a;
-    --beauty-landing-2-s4: #ffd02b;
-    --beauty-landing-2-s5: #747272;
-    --beauty-landing-2-c6: #011f4a;
+  /* Colors */
+  --beauty-landing-2-background: #fff;
+  --beauty-landing-2-s2: #2b7fff;
+  --beauty-landing-2-c1: #011c44;
+  --beauty-landing-2-c3: #4a4a4a;
+  --beauty-landing-2-s4: #ffd02b;
+  --beauty-landing-2-s5: #747272;
+  --beauty-landing-2-c6: #011f4a;
 
-    /* Fonts */
-    --second-family: 'Roboto', sans-serif;
-    --font4: 'Play', sans-serif;
+  /* Fonts */
+  --second-family: 'Roboto', sans-serif;
+  --font4: 'Play', sans-serif;
 }
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1280px;

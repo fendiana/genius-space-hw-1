@@ -1,89 +1,151 @@
 .hero-section {
   position: relative;
-  padding-top: 120px;
-  padding-bottom: 126px;
-
+  padding-top: 70px;
+  padding-bottom: 56px;
   mask-image: url('../images/hero-wave.png');
   mask-repeat: no-repeat;
   mask-position: center bottom;
   mask-size: cover;
 
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 120px;
+    padding-bottom: 126px;
+  }
+
   &::before {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translate(-50%);
+    left: 0;
     width: 100%;
-    max-width: 1440px;
     height: 100%;
-    background-image: linear-gradient(
-      94deg,
-      #fff 9.65%,
-      rgba(255, 255, 255, 0.85) 26.08%,
-      rgba(255, 255, 255, 0.19) 52.74%,
-      rgba(255, 255, 255, 0) 74.46%
+    background: linear-gradient(
+      38deg,
+      #fff 0%,
+      rgba(255, 255, 255, 0.78) 31.23%,
+      rgba(255, 255, 255, 0.2) 50.39%,
+      rgba(255, 255, 255, 0) 68.37%
     );
     content: '';
     pointer-events: none;
     z-index: 2;
+
+    @media screen and (min-width: $bp-tablet) {
+      left: 50%;
+      transform: translate(-50%);
+      max-width: 1440px;
+      background-image: linear-gradient(
+        94deg,
+        #fff 9.65%,
+        rgba(255, 255, 255, 0.85) 26.08%,
+        rgba(255, 255, 255, 0.19) 52.74%,
+        rgba(255, 255, 255, 0) 74.46%
+      );
+    }
   }
 
   &::after {
     position: absolute;
     top: 0;
-    left: calc(50% - 600px);
     right: 0;
+    width: 100%;
     height: 100%;
     background-image: url(../images/hero-section-bg.jpg);
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: center top;
     background-size: cover;
     content: '';
     z-index: 1;
+
+    @media screen and (min-width: $bp-tablet) {
+      background-position: left top;
+      background-size: cover;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      left: calc(50% - 600px);
+      background-position: left top;
+      background-size: cover;
+    }
   }
 
   &__container {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 40px;
     z-index: 3;
+
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: space-between;
+    }
   }
 
   &__content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     max-width: 529px;
     margin-top: 16px;
-    margin-left: 106px;
+
+    @media screen and (min-width: $bp-tablet) {
+      align-items: flex-start;
+      margin-left: 106px;
+    }
   }
 
   &__text {
-    margin-bottom: 16px;
+    margin: 0;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 12px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 16px;
+      font-size: 18px;
+    }
   }
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     color: var(--beauty-landing-2-s2);
     font-family: var(--font4);
     font-weight: 700;
-    font-size: 140px;
+    font-size: 54px;
     line-height: 0.8;
     text-transform: capitalize;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 14px;
+      font-size: 80px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 16px;
+      font-size: 140px;
+    }
   }
 
   &__button {
-    margin-bottom: 14px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 14px;
+    }
   }
 
   &__hint {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
     max-width: 238px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 12px;
+    }
   }
 }
 
