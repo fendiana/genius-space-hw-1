@@ -1,7 +1,7 @@
 .hero-section {
   position: relative;
   padding-top: 70px;
-  padding-bottom: 56px;
+  padding-bottom: 30px;
   mask-image: url('../images/hero-wave.png');
   mask-repeat: no-repeat;
   mask-position: center bottom;
@@ -20,10 +20,10 @@
     height: 100%;
     background: linear-gradient(
       38deg,
-      #fff 0%,
-      rgba(255, 255, 255, 0.78) 31.23%,
-      rgba(255, 255, 255, 0.2) 50.39%,
-      rgba(255, 255, 255, 0) 68.37%
+      #fff 11%,
+      rgba(255, 255, 255, 0.78) 37.23%,
+      rgba(255, 255, 255, 0.2) 55.39%,
+      rgba(255, 255, 255, 0) 70.37%
     );
     content: '';
     pointer-events: none;
@@ -63,8 +63,15 @@
 
     @media screen and (min-width: $bp-desktop) {
       left: calc(50% - 600px);
+      width: auto;
       background-position: left top;
       background-size: cover;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero-section-bg@2x.jpg);
     }
   }
 
@@ -89,6 +96,10 @@
 
     @media screen and (min-width: $bp-tablet) {
       align-items: flex-start;
+      margin-left: 70px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
       margin-left: 106px;
     }
   }
@@ -142,6 +153,7 @@
     font-size: 11px;
     text-align: center;
     max-width: 238px;
+    color: var(--beauty-landing-2-c3);
 
     @media screen and (min-width: $bp-desktop) {
       font-size: 12px;

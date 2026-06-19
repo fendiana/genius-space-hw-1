@@ -27,6 +27,14 @@
     gap: 40px;
   }
 
+  &__logo {
+    width: 57px;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 74px;
+    }
+  }
+
   &__menu {
     display: none;
 

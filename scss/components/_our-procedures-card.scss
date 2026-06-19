@@ -9,6 +9,7 @@
     rgba(1, 28, 68, 0.73) 82.66%,
     #011c44 99.06%
   );
+  overflow: hidden;
 
   &__image {
     position: absolute;
@@ -20,11 +21,14 @@
   }
 
   &__text {
+    width: 100%;
+    max-width: 158px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 22px;
     line-height: 1, 18;
     text-align: center;
     color: var(--beauty-landing-2-background);
+    margin: 0 auto;
   }
 }

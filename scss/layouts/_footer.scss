@@ -1,5 +1,5 @@
 .footer {
-  padding: 56px 0;
+  padding: 32px 0 60px 0;
   position: relative;
   /* color: var(--beauty-landing-2-s5); */
   background-image: url('../images/footer-bg.png');
@@ -8,22 +8,28 @@
   background-size: cover;
   background-color: var(--beauty-landing-2-c1);
 
+  @media screen and (min-width: $bp-desktop) {
+    padding: 56px 0;
+  }
+
   &::after {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 250px;
-    height: 150px;
-    background-image: url('../images/footer-bottles.png');
-    background-repeat: no-repeat;
-    content: '';
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 250px;
+      height: 150px;
+      background-image: url('../images/footer-bottles.png');
+      background-repeat: no-repeat;
+      content: '';
+    }
   }
 
   &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
 
     @media screen and (min-width: $bp-desktop) {
       flex-direction: row;
@@ -36,6 +42,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-size: 16px;
     text-align: center;
 
     @media screen and (min-width: $bp-desktop) {
@@ -45,21 +52,27 @@
     }
   }
 
+  &__address {
+    gap: 16px;
+  }
+
   &__logo,
   &__menu {
     flex-grow: 1;
   }
 
-  // &__logo {
-  //   width: 56px;
-  //   height: 30px;
-  //   margin-bottom: 42px;
+  &__logo {
+    width: 56px;
+    height: 30px;
+    margin-bottom: 22px;
+    align-self: center;
 
-  //   @media screen and (min-width: $bp-desktop) {
-  //     width: 83px;
-  //     height: 42px;
-  //   }
-  // }
+    @media screen and (min-width: $bp-desktop) {
+      width: 83px;
+      height: 42px;
+      align-self: flex-start;
+    }
+  }
 
   &__menu {
     display: flex;
@@ -69,6 +82,7 @@
 
   &__address-list {
     display: none;
+
     @media screen and (min-width: $bp-desktop) {
       display: flex;
       flex-direction: column;
@@ -80,11 +94,15 @@
   &__address-link {
     color: var(--beauty-landing-2-background);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     line-height: 1.1;
     text-decoration: none;
     transition: color 0.2s;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 16px;
+    }
 
     &:hover {
       color: var(--beauty-landing-2-s2);
@@ -95,16 +113,25 @@
   &__socials {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 20px;
 
     @media screen and (min-width: $bp-desktop) {
       justify-content: flex-start;
+      gap: 24px;
     }
   }
 
   &__socials-icon {
+    display: block;
+    width: 32px;
+    height: 32px;
     fill: var(--beauty-landing-2-background);
     transition: fill 0.2s;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 42px;
+      height: 42px;
+    }
 
     &:hover {
       fill: var(--beauty-landing-2-s2);
@@ -125,15 +152,23 @@
   &__address-info {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 16px;
+    }
   }
 
   &__address-copyright {
     color: var(--beauty-landing-2-s5);
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 13px;
+    font-size: 12px;
     font-style: normal;
     margin-bottom: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 13px;
+    }
   }
 }

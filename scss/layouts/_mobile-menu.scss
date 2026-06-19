@@ -12,6 +12,10 @@
     transform: translate(0);
   }
 
+  @media screen and (min-width: $bp-desktop) {
+    display: none;
+  }
+
   &__btn-close {
     position: absolute;
     top: 16px;

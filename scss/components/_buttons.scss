@@ -24,6 +24,11 @@
   }
 
   @media screen and (min-width: $bp-tablet) {
+    padding: 14px 28px;
+    font-size: 17px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
     padding: 16px 32px;
     font-size: 18px;
   }
