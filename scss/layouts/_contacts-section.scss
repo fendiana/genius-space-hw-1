@@ -25,6 +25,7 @@
 
     @media screen and (min-width: $bp-desktop) {
       gap: 32px;
+      margin-bottom: 0;
     }
   }
 
@@ -37,7 +38,7 @@
 
     @media screen and (min-width: $bp-tablet) {
       margin: 0;
-      width: 310px;
+      width: 50%;
       height: 460px;
       border-radius: 32px;
       order: 0;

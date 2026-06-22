@@ -15,12 +15,13 @@
 
   &__title {
     margin-bottom: 24px;
-    font-family: var(--font4);
-    font-weight: 500;
+    font-family: var(--second-family);
+    font-weight: 600;
     font-size: 32px;
     line-height: 1.2;
 
     @media screen and (min-width: $bp-tablet) {
+      font-family: var(--title-font);
       margin-bottom: 36px;
       font-weight: 700;
       font-size: 48px;
